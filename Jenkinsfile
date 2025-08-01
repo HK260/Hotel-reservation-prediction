@@ -16,7 +16,6 @@ pipeline{
         }
     }
 
-    stages{
         stage('Setting up our Virtual Environment and Installing dependancies'){
             steps{
                 script{
@@ -29,6 +28,5 @@ pipeline{
                     '''
                 }
             }
-        }
     }
 }
