@@ -5,7 +5,8 @@ pipeline{
         VENV_DIR = 'venv'
     }
 
-    stages{
+    stages
+    {
         stage('Cloning Github repo to Jenkins'){
             steps{
                 script{
@@ -14,7 +15,6 @@ pipeline{
                 }
             }
         }
-    }
 
         stage('Setting up our Virtual Environment and Installing dependancies'){
             steps{
@@ -28,5 +28,6 @@ pipeline{
                     '''
                 }
             }
+        }
     }
 }
